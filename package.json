@@ -1,0 +1,38 @@
+{
+  "name": "apiedu",
+  "version": "1.0.0",
+  "description": "api for educare",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjanchom/APIEDU.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "docker",
+    "mongo"
+  ],
+  "author": "sasin janchom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sjanchom/APIEDU/issues"
+  },
+  "homepage": "https://github.com/Sjanchom/APIEDU#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "dependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.2",
+    "nodemon": "^1.9.2"
+  }
+}
