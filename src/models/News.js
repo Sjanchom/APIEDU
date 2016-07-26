@@ -1,32 +1,31 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
-const Schema = new Schema({
+const model = new Schema({
     title: {
         type: String,
     },
     detail: {
         type: String
     },
-    imgpath:{
-      type:String
+    imgpath: {
+        type: String
     },
-    topnews:{
-      type:Boolean
+    topnews: {
+        type: Boolean
     },
-    created_date:{
-      type:Date
+    created_date: {
+        type: Date
     }
 });
 
-Schema.pre('save', function(next){
-  let news = this
-  news.created_date = new Date();
+model.pre('save', function(next) {
+    let news = this
+    news.created_date = new Date();
+    next();
 
-
-  next();
 });
 
 
-const ModelClass = mongoose.model('News', Schema);
+const ModelClass = mongoose.model('News', model);
 export default ModelClass;

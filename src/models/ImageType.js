@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
-const Schema = new Schema({
+const model = new Schema({
     type: {
-        type: int,
+        type: Number,
         unique: true
     },
     name: {
@@ -12,5 +12,5 @@ const Schema = new Schema({
 });
 
 
-const ModelClass = mongoose.model('ImageType', Schema);
+const ModelClass = mongoose.model('ImageType', model);
 export default ModelClass;

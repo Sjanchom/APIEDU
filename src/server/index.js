@@ -3,9 +3,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import router from '../api';
 import http from 'http';
-//import testt from '../server/api/home/index'
 const app = express();
-//const sss = require('./api/home/index').default;
 
 
 
@@ -40,14 +38,13 @@ function execGet(req, res, next) {
     else {
         var obj = require('./api/' + params[1] + '/' + params[2]).default;
         obj = new obj(app);
-        //console.log(params[3]);
         var func = obj[params[3]];
         var inputs = [];
         for (var i = 4; i < params.length; i++) {
             if (params[i])
                 inputs.push(params[i]);
         }
-        console.log('inputs:', inputs);
+        //console.log('inputs:', inputs);
         func(inputs, function(result) {
             res.send(result);
         });
@@ -86,7 +83,7 @@ function execPost(req, res, next) {
 }
 
 function executeApi(req, res, next) {
-  
+
     switch (req.method) {
         case "GET":
             execGet(req, res, next);
