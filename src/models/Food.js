@@ -15,5 +15,5 @@ const Schema = new Schema({
 
 
 
-const ModelClass = mongoose.model('food', Schema);
+const ModelClass = mongoose.model('Food', Schema);
 export default ModelClass;

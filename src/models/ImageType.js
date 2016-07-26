@@ -12,5 +12,5 @@ const Schema = new Schema({
 });
 
 
-const ModelClass = mongoose.model('imagetype', Schema);
+const ModelClass = mongoose.model('ImageType', Schema);
 export default ModelClass;

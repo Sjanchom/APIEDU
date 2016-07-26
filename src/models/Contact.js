@@ -10,8 +10,5 @@ const Schema = new Schema({
     }
 });
 
-
-
-
-const ModelClass = mongoose.model('contact', Schema);
+const ModelClass = mongoose.model('Contact', Schema);
 export default ModelClass;

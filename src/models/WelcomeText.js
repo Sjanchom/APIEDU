@@ -8,5 +8,5 @@ const welcomeTextSchema = new Schema({
 });
 
 
-const model = mongoose.model('welcometext', welcomeTextSchema);
+const model = mongoose.model('Welcometext', welcomeTextSchema);
 export default model;

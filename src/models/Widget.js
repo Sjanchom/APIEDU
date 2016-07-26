@@ -17,5 +17,5 @@ const Schema = new Schema({
 });
 
 
-const ModelClass = mongoose.model('widgets', Schema);
+const ModelClass = mongoose.model('Widgets', Schema);
 export default ModelClass;

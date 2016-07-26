@@ -15,5 +15,5 @@ const Schema = new Schema({
 
 
 
-const ModelClass = mongoose.model('schedule', Schema);
+const ModelClass = mongoose.model('Schedule', Schema);
 export default ModelClass;

@@ -22,5 +22,5 @@ const Schema = new Schema({
 
 
 
-const ModelClass = mongoose.model('instructor', Schema);
+const ModelClass = mongoose.model('Instructor', Schema);
 export default ModelClass;

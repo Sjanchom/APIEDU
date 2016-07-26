@@ -28,5 +28,5 @@ Schema.pre('save', function(next){
 });
 
 
-const ModelClass = mongoose.model('news', Schema);
+const ModelClass = mongoose.model('News', Schema);
 export default ModelClass;
